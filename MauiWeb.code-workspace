@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "/",
+		},
+		{
+			"path": "./MauiWeb",
+			"name": "/MauiWeb"
+		},
+		{
+			"path": "./MauiWeb.Client",
+			"name": "/MauiWeb.Client"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/.DS_Store": true,
+			"**/Thumbs.db": true,
+			"MauiWeb": true,
+			"MauiWeb.Client": true,
+		},
+		"files.associations": {
+			"*.esproj": "xml",
+		}
+	}
+}

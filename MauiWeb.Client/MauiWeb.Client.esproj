@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.3804879">
+  <PropertyGroup>
+    <JavaScriptTestRoot>.\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Vitest</JavaScriptTestFramework>
+    <!-- Allows the build (or compile) script located on package.json to run on Build -->
+    <ShouldRunBuildScript>true</ShouldRunBuildScript>
+    <!-- Folder where production build objects will be placed -->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>
+    <StartupCommand>npm run dev</StartupCommand>
+    <BuildCommand>npm run build</BuildCommand>
+    <TestCommand>npm run test</TestCommand>
+    <PackageJsonDirectory>$(MSBuildProjectDirectory)</PackageJsonDirectory>
+    <NpmInstallCheck>$(PackageJsonDirectory)\package-lock.json</NpmInstallCheck>
+    <CleanCommand>npm run clean</CleanCommand>
+  </PropertyGroup>
+</Project>
