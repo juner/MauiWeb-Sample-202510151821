@@ -6,13 +6,13 @@ use .NET 10.0 Preview
 winget install Microsoft.DotNet.SDK.Preview
 ```
 
-workload restore 
+workload restore
 
 ```cmd
 dotnet workload restore
 ```
 
-run 
+run (windows)
 
 ```cmd
 dotnet run --project MauiWeb --framework net10.0-windows10.0.19041.0
