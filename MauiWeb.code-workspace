@@ -31,13 +31,11 @@
 		"version": "2.0.0",
 		"tasks": [
 			{
-				"label": "dotnet build MauiWeb --framework net10.0-windows10.0.19041.0",
+				"label": "dotnet build MauiWeb",
 				"command": "dotnet",
 				"args": [
 					"build",
 					"MauiWeb",
-					"--framework",
-					"net10.0-windows10.0.19041.0",
 				],
 				"group":"build",
 				"detail": "MauiWeb run",
@@ -60,7 +58,7 @@
 				"name": ".NET MAUI",
 				"type": "maui",
 				"request": "launch",
-				"preLaunchTask": "dotnet build MauiWeb --framework net10.0-windows10.0.19041.0",
+				"preLaunchTask": "dotnet build MauiWeb",
 			}
 		],
 		"compounds": []
