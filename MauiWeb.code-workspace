@@ -26,5 +26,49 @@
 		"files.associations": {
 			"*.esproj": "xml",
 		}
-	}
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "dotnet build MauiWeb --framework net10.0-windows10.0.19041.0",
+				"command": "dotnet",
+				"args": [
+					"build",
+					"MauiWeb",
+					"--framework",
+					"net10.0-windows10.0.19041.0",
+				],
+				"group":"build",
+				"detail": "MauiWeb run",
+			},
+			{
+				"label": "dotnet clean",
+				"command": "dotnet",
+				"args": [
+					"clean",
+				],
+				"group":"build",
+				"detail": "MauiWeb clean",
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": ".NET MAUI",
+				"type": "maui",
+				"request": "launch",
+				"preLaunchTask": "dotnet build MauiWeb --framework net10.0-windows10.0.19041.0",
+			}
+		],
+		"compounds": []
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-dotnettools.dotnet-maui",
+			"vue.volar"
+		]
+	},
 }
