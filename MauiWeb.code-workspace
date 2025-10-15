@@ -38,7 +38,7 @@
 					"MauiWeb",
 				],
 				"group":"build",
-				"detail": "MauiWeb run",
+				"detail": "MauiWeb build",
 			},
 			{
 				"label": "dotnet clean",
@@ -46,8 +46,18 @@
 				"args": [
 					"clean",
 				],
-				"group":"build",
+				"group": "none",
 				"detail": "MauiWeb clean",
+			},
+			{
+				"label": "dotnet build MauiWeb.Client",
+				"command": "dotnet",
+				"args": [
+					"build",
+					"MauiWeb.Client",
+				],
+				"group": "build",
+				"detail": "MauiWeb.Client build"
 			}
 		]
 	},
