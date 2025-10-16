@@ -25,7 +25,7 @@
 		},
 		"files.associations": {
 			"*.esproj": "xml",
-		}
+		},
 	},
 	"tasks": {
 		"version": "2.0.0",
@@ -37,8 +37,11 @@
 					"build",
 					"MauiWeb",
 				],
-				"group":"build",
+				"group": "build",
 				"detail": "MauiWeb build",
+				"problemMatcher": [
+					"$msCompile"
+				]
 			},
 			{
 				"label": "dotnet clean",
@@ -48,6 +51,9 @@
 				],
 				"group": "none",
 				"detail": "MauiWeb clean",
+				"problemMatcher": [
+					"$msCompile"
+				]
 			},
 			{
 				"label": "dotnet build MauiWeb.Client",
@@ -57,7 +63,10 @@
 					"MauiWeb.Client",
 				],
 				"group": "build",
-				"detail": "MauiWeb.Client build"
+				"detail": "MauiWeb.Client build",
+				"problemMatcher": [
+					"$msCompile"
+				]
 			}
 		]
 	},
