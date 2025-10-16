@@ -19,3 +19,10 @@ dotnet run --project MauiWeb --framework net10.0-windows10.0.19041.0
 ```
 
 or visual studio 2026 insider.
+
+## versions
+
+- dotnet --version
+  - 10.0.100-rc.2.25502.107
+- node --version
+  - v24.9.0
