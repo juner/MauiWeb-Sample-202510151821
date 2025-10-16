@@ -63,7 +63,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\MauiWeb.Client\MauiWeb.Client.esproj" >
+		<ProjectReference Include="..\MauiWeb.Client\MauiWeb.Client.esproj">
 			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
 		</ProjectReference>
 	</ItemGroup>
